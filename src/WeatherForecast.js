@@ -7,7 +7,7 @@ export default function WeatherForecast({data}) {
         let dateTime = new Date(d * 1000)
         const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
         const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-        return days[dateTime.getDay()] + ', ' + months[dateTime.getMonth()] + ' ' + (dateTime.getDate()+1);
+        return days[dateTime.getDay()] + ', ' + months[dateTime.getMonth()] + ' ' + (dateTime.getDate());
     }
 
     const style = {
@@ -21,42 +21,42 @@ export default function WeatherForecast({data}) {
         <CardGroup>
             <Card style={style}>
                 <Card.Body>
-                    <Card.Title>{getDate(data.list[0].dt)}</Card.Title>
-                    <img src={`http://openweathermap.org/img/w/${data.list[0].weather[0].icon}.png`} alt='weather icon' />
-                    <Card.Text>{(data.list[0].main.temp - 273.15).toFixed()} °C</Card.Text>
-                    <Card.Text>{data.list[0].weather[0].description}</Card.Text>
+                    <Card.Title>{getDate(data.list[1].dt)}</Card.Title>
+                    <img src={`http://openweathermap.org/img/w/${data.list[1].weather[0].icon}.png`} alt='weather icon' />
+                    <Card.Text>{(data.list[1].main.temp - 273.15).toFixed()} °C</Card.Text>
+                    <Card.Text>{data.list[1].weather[0].description}</Card.Text>
                 </Card.Body>
             </Card>
             <Card style={style}>
                 <Card.Body>
-                    <Card.Title>{getDate(data.list[8].dt)}</Card.Title>
-                    <img src={`http://openweathermap.org/img/w/${data.list[8].weather[0].icon}.png`} alt='weather icon' />
-                    <Card.Text>{(data.list[8].main.temp - 273.15).toFixed()} °C</Card.Text>
-                    <Card.Text>{data.list[8].weather[0].description}</Card.Text>
+                    <Card.Title>{getDate(data.list[9].dt)}</Card.Title>
+                    <img src={`http://openweathermap.org/img/w/${data.list[9].weather[0].icon}.png`} alt='weather icon' />
+                    <Card.Text>{(data.list[9].main.temp - 273.15).toFixed()} °C</Card.Text>
+                    <Card.Text>{data.list[9].weather[0].description}</Card.Text>
                 </Card.Body>
             </Card>
             <Card style={style}>
                 <Card.Body>
-                    <Card.Title>{getDate(data.list[16].dt)}</Card.Title>
-                    <img src={`http://openweathermap.org/img/w/${data.list[16].weather[0].icon}.png`} alt='weather icon' />
-                    <Card.Text>{(data.list[16].main.temp - 273.15).toFixed()} °C</Card.Text>
-                    <Card.Text>{data.list[16].weather[0].description}</Card.Text>
+                    <Card.Title>{getDate(data.list[17].dt)}</Card.Title>
+                    <img src={`http://openweathermap.org/img/w/${data.list[17].weather[0].icon}.png`} alt='weather icon' />
+                    <Card.Text>{(data.list[17].main.temp - 273.15).toFixed()} °C</Card.Text>
+                    <Card.Text>{data.list[17].weather[0].description}</Card.Text>
                 </Card.Body>
             </Card>
             <Card style={style}>
                 <Card.Body>
-                    <Card.Title>{getDate(data.list[24].dt)}</Card.Title>
-                    <img src={`http://openweathermap.org/img/w/${data.list[24].weather[0].icon}.png`} alt='weather icon' />
-                    <Card.Text>{(data.list[24].main.temp - 273.15).toFixed()} °C</Card.Text>
-                    <Card.Text>{data.list[24].weather[0].description}</Card.Text>
+                    <Card.Title>{getDate(data.list[25].dt)}</Card.Title>
+                    <img src={`http://openweathermap.org/img/w/${data.list[25].weather[0].icon}.png`} alt='weather icon' />
+                    <Card.Text>{(data.list[25].main.temp - 273.15).toFixed()} °C</Card.Text>
+                    <Card.Text>{data.list[25].weather[0].description}</Card.Text>
                 </Card.Body>
             </Card>
             <Card style={style}>
                 <Card.Body>
-                    <Card.Title>{getDate(data.list[32].dt)}</Card.Title>
-                    <img src={`http://openweathermap.org/img/w/${data.list[32].weather[0].icon}.png`} alt='weather icon' />
-                    <Card.Text>{(data.list[32].main.temp - 273.15).toFixed()} °C</Card.Text>
-                    <Card.Text>{data.list[32].weather[0].description}</Card.Text>
+                    <Card.Title>{getDate(data.list[33].dt)}</Card.Title>
+                    <img src={`http://openweathermap.org/img/w/${data.list[33].weather[0].icon}.png`} alt='weather icon' />
+                    <Card.Text>{(data.list[33].main.temp - 273.15).toFixed()} °C</Card.Text>
+                    <Card.Text>{data.list[33].weather[0].description}</Card.Text>
                 </Card.Body>
             </Card>
         </CardGroup>   
